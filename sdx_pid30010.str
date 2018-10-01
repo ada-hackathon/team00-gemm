@@ -1,0 +1,123 @@
+/*
+
+Xilinx SDx v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:40 MDT 2018
+
+Process ID: 30010
+License: Customer
+
+Current time: 	Mon Oct 01 08:12:53 EDT 2018
+Time zone: 	Eastern Standard Time (US/Eastern)
+
+OS: Ubuntu
+OS Version: 4.15.0-32-generic
+OS Architecture: amd64
+Available processors (cores): 48
+
+Display: localhost:11.0
+Screen size: 3440x1440
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 2,646 GB
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/SDK/2018.2/tps/lnx64/jre
+Java executable location: 	/opt/Xilinx/SDK/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 3 GB
+
+Java library paths: /opt/Xilinx/SDK/2018.2/tps/lnx64/jre/lib/amd64/server:/opt/Xilinx/SDK/2018.2/tps/lnx64/jre/lib/amd64:/opt/Xilinx/SDK/2018.2/tps/lnx64/jre/../lib/amd64:/opt/Xilinx/SDK/2018.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/SDK/2018.2/lib/lnx64.o:/opt/Xilinx/SDK/2018.2/tps/lnx64/jre/lib/amd64:/opt/Xilinx/SDK/2018.2/tps/lnx64/jre/lib/amd64/server:/opt/Xilinx/SDx/2018.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/SDx/2018.2/lib/lnx64.o:/opt/Xilinx/SDx/2018.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/SDx/2018.2/lib/lnx64.o:/opt/Xilinx/SDx/2018.2/runtime/lib/x86_64:/opt/Xilinx/SDx/2018.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/SDx/2018.2/lib/lnx64.o:/opt/Xilinx/SDx/2018.2/runtime/lib/x86_64:/opt/Xilinx/SDK/2018.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/SDx/2018.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.3.200.v20160318-1642.jar
+LD_LIBRARY_PATH: /opt/Xilinx/SDK
+
+User name: 	hiwot
+User home directory: /home/hiwot
+User working directory: /home/hiwot/OpenCL_example
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/SDK
+HDI_APPROOT: /opt/Xilinx/SDK/2018.2
+RDI_DATADIR: /opt/Xilinx/SDK/2018.2/data
+RDI_BINDIR: /opt/Xilinx/SDK/2018.2/bin
+
+SDx preferences directory: /home/hiwot/.Xilinx/SDx/2018.2/
+SDx workspace directory: /home/hiwot/workspace/OpenCL_tutorial
+SDx workspace log file location: /home/hiwot/workspace/OpenCL_tutorial/.metadata/.log
+Engine tmp dir: 	./.Xil/sdx-30010-poisonivy
+
+Xilinx Environment Variables
+----------------------------
+XILINXD_LICENSE_FILE: 2210@license18.engin.umich.edu
+XILINX_DSP: 
+XILINX_PLANAHEAD: /opt/Xilinx/SDK/2018.2
+XILINX_SDK: /opt/Xilinx/SDK/2018.2
+XILINX_SDX: /opt/Xilinx/SDx/2018.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2018.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectTreeTable("Hardware Server", "SDx Log", "SDKLogView", "TreeViewer.ViewContentProvider");
+selectProjectExplorer("Debug", "OpenCL_example", "SDKLogView", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("Debug", "LaunchView", "CTabItem.DEBUG");
+activateView("Project Explorer", "Workspace", "ProjectExplorer", "CTabItem.PROJECT_EXPLORER");
+selectProjectExplorer("OpenCL_example", EventType.POPUP_TRIGGER_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Delete", "Project Explorer", "ProjectExplorer", "MenuItem.DELETE");
+selectButton("OK", "Delete Resources", "RefactoringWizardDialog2", "Button.OK");
+selectTable("OpenCL_example contains resources that are not in s", "Delete Resources", "RefactoringStatusDialog", "Table");
+selectButton("Continue", "Delete Resources", "RefactoringStatusDialog", "Button.CONTINUE");
+closeView("Emulation Console", "SDXEmulationMessageView", "CTabItem.EMULATION_CONSOLE");
+closeView("host.cpp", "OpenCL_example/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+closeView("OpenCL_example", "OpenCL_example/project.sdx", "SDXSettingsEditor", "CTabItem.OPENCL_EXAMPLE");
+selectMenuItem("File", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("New", "WorkbenchWindow", "MenuItem.NEW");
+selectMenuItem("SDx Project", "WorkbenchWindow", "MenuItem.SDX_PROJECT");
+selectButton("Next", "New SDx Project (Project Type)", "NewSDXProjectWizard", "Button.NEXT");
+setTextField("opencl_Test", "New SDx Project (Create a New SDx Project)", "NewSDXProjectWizard", "Text.PROJECT_NAME");
+selectButton("Next", "New SDx Project (Create a New SDx Project)", "NewSDXProjectWizard", "Button.NEXT");
+selectTreeTable("zcu102", "New SDx Project (Platform)", "NewSDXProjectWizard", "TreeViewer.SDXPlatformsTreeTableContentProvider");
+selectButton("Next", "New SDx Project (Platform)", "NewSDXProjectWizard", "Button.NEXT");
+selectCombo("A53 OpenCL Linux", "New SDx Project (System configuration)", "NewSDXProjectWizard", "Combo.SYSTEM_CONFIGURATION");
+selectButton("Next", "New SDx Project (System configuration)", "NewSDXProjectWizard", "Button.NEXT");
+selectButton("Finish", "New SDx Project (Templates)", "NewSDXProjectWizard", "Button.FINISH");
+selectProjectExplorer("src", "opencl_Test", EventType.POPUP_TRIGGER_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Import Sources", "Project Explorer", "ProjectExplorer", "MenuItem.IMPORT_SOURCES");
+selectButton("Browse", "Import Sources (File system)", "FileSystemImportWizard", "Button.BROWSE");
+selectTree("OpenCL_example", "Import Sources (File system)", "FileSystemImportWizard", "Tree.OPENCL_EXAMPLE");
+selectTable("adder.cl", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("host.cpp", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("mult.cl", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("xcl2.cpp", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectTable("xcl2.hpp", "Import Sources (File system)", "FileSystemImportWizard", "Table");
+selectButton("Finish", "Import Sources (File system)", "FileSystemImportWizard", "Button.FINISH");
+selectProjectExplorer("opencl_Test", EventType.POPUP_TRIGGER_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectProjectExplorer("project.sdx", "opencl_Test", EventType.DOUBLE_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectCombo("Emulation", "opencl_Test", "SDXSettingsEditor", "ComboViewer.TARGET");
+selectCombo("Hardware", "opencl_Test", "SDXSettingsEditor", "ComboViewer.EMULATION_TARGET");
+selectProjectExplorer("opencl_Test", EventType.POPUP_TRIGGER_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarMenuButton("Build Debug for project opencl_Test", "opencl_Test", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+selectCheckBoxMenuItem("1 Debug", Boolean.FALSE, "Project Explorer", "ProjectExplorer", "MenuItem.1_DEBUG");
+selectProjectExplorer("opencl_Test", EventType.POPUP_TRIGGER_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Project Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("2 Launch on Emulator", "opencl_Test", "WorkbenchWindow", "MenuItem.2_LAUNCH_ON_EMULATOR");
+selectButton("OK", "No Emulation Model", "MessageDialog", "Button.OK");
+selectProjectExplorer("adder", "opencl_Test > src > adder.cl", EventType.POPUP_TRIGGER_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Toggle Hardware Function", "Project Explorer", "ProjectExplorer", "MenuItem.TOGGLE_HARDWARE");
+selectProjectExplorer("mult", "opencl_Test > src > mult.cl", EventType.POPUP_TRIGGER_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Toggle Hardware Function", "Project Explorer", "ProjectExplorer", "MenuItem.TOGGLE_HARDWARE");
+selectToolBarButton("Build Debug for project opencl_Test", "opencl_Test", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+selectProjectExplorer("Debug", "opencl_Test", "ConsoleView", "TreeViewer.NavigatorContentServiceContentProvider");
+selectProjectExplorer("host.cpp", "opencl_Test > src", EventType.DOUBLE_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectToolBarButton("Build Debug for project opencl_Test", "opencl_Test", "WorkbenchWindow", "ToolItem.BUILD_DEBUG_FOR");
+selectProjectExplorer("opencl_Test", EventType.POPUP_TRIGGER_CLICK, "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Run As", "Project Explorer", "ProjectExplorer", "MenuItem.RUN_AS");
+selectMenuItem("2 Launch on Emulator", "opencl_Test", "WorkbenchWindow", "MenuItem.2_LAUNCH_ON_EMULATOR");
+selectButton("Yes", "Emulation", "MessageDialog", "Button.YES");
+selectButton("Start", "Emulation", "SdsEmulationDialog", "Button.START");
