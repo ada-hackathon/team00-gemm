@@ -2,3 +2,9 @@ File Contents:
 -> host.cpp: Contains the host code which initializes the matrices with random numbers, initializes the OpenCL platforms, then dispatches the kernel.
 -> host.h: Contains the definitions of all the variables/sizes. Note that if tile size is changed here, it has to also be changed in the OpenCL file.
 -> gemm.cl: Contains the OpenCL kernel for a tiled matrix matrix multiply.
+
+Team 00:
+- Adel Ejjeh (UIUC)
+- Mert Hidayetoglu (UIUC)
+- Fredrik Kjolstad (MIT)
+- Huwan Peng (UW)
